@@ -4,6 +4,7 @@
 \usepackage{multirow}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{hyperref}
 %\graphicspath{{path/}}
 
 \title{Recognizing Differentially Expressed Genes in HCC}
@@ -16,7 +17,7 @@
 \maketitle
 
 \section{Introduction}
-The study's goal is to recognize special key genes in hepatocellular carcinoma (HCC) in response to the Question 1 available at \url{http://oncinfo.org/r_test}.
+The study's goal is to recognize special key genes in hepatocellular carcinoma (HCC) in response to the Question 2 available at \url{http://oncinfo.org/r_test}.
 We have 8 control samples and 8 tissue samples given from Gene Expression Omnibus with access number GSE59259.
 As the question asked, the differentially expressed genes (DEGs) between the HCCs and control samples were identified with the aid of limma
 package in R with cutoff  adj.p.value~<~0.01. 
@@ -36,7 +37,7 @@ Finally we used the Volcano plot to justify our work. The farther the genes go t
 adjusted p-values and logFC. 
 The top 5 DE genes are illustrated in red. 
 
-\begin{figure}{!htbp}
+\begin{figure}[!htbp]
 
 \begin{minipage}{.48\textwidth}
 \includegraphics[width=\textwidth]{VolcanoPlotadj.png}
