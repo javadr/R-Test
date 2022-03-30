@@ -33,6 +33,18 @@ Therefore, we chose ``adjusted p-value < 0.01 and (logFC)|~>~2.0" as another cut
 While with the former cutoff we found 1570 genes, with the latter 143 genes were identified. However, for top five DE genes, they are similar except for just 
 one gene (see table~\ref{tab:topgen}).
 
+\begin{table}[!htbp]
+\begin{tabular}{c||c|c}
+    \multicolumn    {1}{c||}{cutoff criteria} & adj.P.Value < 0.01 & adj.P.Value < 0.01 \& |logFC|>2 \\\hline
+    \multirow{5}{*}{\rotatebox{90}{genes}   } & BC074921 & BC074921\\
+    & C069643 & BC069643\\
+    & NM\_004108 & NM\_004108 \\
+    & BC044647 & XM\_379029 \\
+    & XM\_379029 & NM\_000640\\
+\end{tabular}
+    \caption{Top 5 DE genes}\label{tab:topgen}
+\end{table}
+
 Finally we used the Volcano plot to justify our work. The farther the genes go the to right or left, the more dysregulated they are. However, genes appear higher on the volcano plot show highly significant changes. Green points depict the genes that have desired criteria with respect to 
 adjusted p-values and logFC. 
 The top 5 DE genes are illustrated in red. 
@@ -52,18 +64,6 @@ The top 5 DE genes are illustrated in red.
 
 \section{Results}
 The table~\ref{tab:topgen} depicts genes found as most frequent differentially expressed genes.
-
-\begin{table}[!htbp]
-\begin{tabular}{c||c|c}
-    \multicolumn    {1}{c||}{cutoff criteria} & adj.P.Value < 0.01 & adj.P.Value < 0.01 \& |logFC|>2 \\\hline
-    \multirow{5}{*}{\rotatebox{90}{genes}   } & BC074921 & BC074921\\
-    & C069643 & BC069643\\
-    & NM\_004108 & NM\_004108 \\
-    & BC044647 & XM\_379029 \\
-    & XM\_379029 & NM\_000640\\
-\end{tabular}
-    \caption{Top 5 DE genes}\label{tab:topgen}
-\end{table}
 
     Figures~\ref{fig:heat1} and \ref{fig:heat2} show heatmap for both cutoff criteria.
     The maps show how the genes correlate with each others, and also cluster the genes based on their similarity in term of their expressions. 
